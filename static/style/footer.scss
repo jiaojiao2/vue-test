@@ -1,0 +1,21 @@
+.footer{
+  width:100%;
+  height:50px;
+  position:fixed;
+  bottom:0;
+  background: $fontcolor;
+  font-size:$fontsize;
+  .list-item{
+    float:left;
+    width:20%;
+    padding:10px 20px;
+    text-align: center;
+    i{
+      display: block;
+    }
+    span{
+      color:$bgcolor
+    }
+  }
+}
+

@@ -1,0 +1,27 @@
+<template>
+	<div>
+		
+	</div>
+</template>
+
+<script>
+	export default{
+		data:function(){
+			return{
+				counter:0
+
+			}
+		},
+		methods:{
+			incrementCounter:function(){
+				this.counter += 1,
+				this.$emit('increment')
+			}
+		}
+	}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+	
+</style>
