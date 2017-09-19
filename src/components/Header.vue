@@ -1,22 +1,10 @@
 <template>
-  <div class="footer">
-    <router-link to="/" class="list-item">
-      <i class="iconfont icon-all"></i>
-      <span>首页</span>
-    </router-link>
-    <router-link to="/weitao" class="list-item">
-      <i class="iconfont icon-account"></i>
-      <span>微淘</span>
-    </router-link>
-    <router-link to="/found" class="list-item">
+  <div class="header">
+    <div class="head-top">
       <i class="iconfont icon-survey"></i>
-      <span>发现</span>
-    </router-link>
-    <router-link to="/cart" class="list-item">
-      <i class="iconfont icon-account"></i>
-      <span>购物车</span>
-    </router-link>
-
+      <input type="text" class="" />
+      <span>消息</span>
+    </div>
   </div>
 </template>
 <script>
@@ -44,7 +32,13 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss">
+<style lang="scss" scoped>
   @import "../../static/style/common.scss";
-  @import "../../static/style/footer.scss";
+  @import "../../static/style/header.scss";
+  i{
+    display:block;
+    width:40px;
+    height:40px;
+    color:#666
+  }
 </style>

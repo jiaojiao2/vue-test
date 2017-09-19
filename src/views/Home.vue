@@ -1,13 +1,29 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
+    <mjHeader></mjHeader>
+    <mjBanner></mjBanner>
+    <div class="contTop">
+      <ul class="contTopUl">
+        <li>
+          <img src="" alt="">
+          <span>淘抢购</span>
+        </li>
+        <li></li>
+      </ul>
+      <ul class="contTopUl">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
     <mjFooter></mjFooter>
   </div>
 </template>
 
 <script>
 import mjFooter from '../components/Footer'
+import mjHeader from '../components/Header'
+import mjBanner from '../components/Banner'
 export default {
   name: 'hello',
   data () {
@@ -16,7 +32,9 @@ export default {
     }
   },
   components:{
-    'mjFooter':mjFooter
+    'mjFooter':mjFooter,
+    'mjHeader':mjHeader,
+    'mjBanner':mjBanner,
   }
 }
 </script>
@@ -26,4 +44,5 @@ export default {
 h1, h2 {
   font-weight: normal;
 }
+
 </style>
